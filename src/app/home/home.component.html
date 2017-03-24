@@ -1,0 +1,24 @@
+
+<br><br>
+
+
+<div *ngFor="let post  of homePosts">
+    <a routerLink="/login"  >
+      <div class="row">
+          <div class="col m6 l3 ">
+              <div class="card">
+                  <div class="card-image"><img  class="responsive-img" src="{{post.img_capa}}"> </div>
+              </div>
+          <p>{{post.autor}} | {{post.data}}</p>
+          </div>
+              
+        <div class="col s4 m6 l9 ">  
+          <span class="card-title">{{post.titulo}}</span>
+          <p>{{post.post}}</p>
+        </div>
+      </div>
+    </a>
+ <div class="divider"></div><br>
+</div>
+    <!--<app-home-menu></app-home-menu>-->
+  
